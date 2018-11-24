@@ -36,14 +36,31 @@
             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <p class="presearch-text-question">Заинтересовались?</p>
             <p class="presearch-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="hotels-search-form-button">Поиск гостиницы в Седоне</button>
-            <form class="hotels-search-form">
-              <!--Форма поиска-->
+            <button class="hotels-search-form-button" type="button">Поиск гостиницы в Седоне</button>
+            <form class="hotels-search-form" method="post" action="https://echo.htmlacademy.ru">
+                <label for="checkin-date">Дата заезда:</label>
+                <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017" value="">
+                <label for="checkout-date">Дата выезда:</label>
+                <input type="text" name="checkout-date" id="checkout-date" placeholder="4 июля 2017" value="">
+                <label for="adults-qty">
+                    Взрослые
+                    <button class="button-minus" type="button">-</button>
+                    <input type="text" name="adults-qty" id="adults-qty" placeholder="2" value="">
+                    <button class="button-plus" type="button">+</button>
+                </label>
+                <label for="children-qty">
+                    Дети
+                    <button class="button-minus" type="button">-</button>
+                    <input type="text" name="children-qty" id="children-qty" placeholder="0" value="">
+                    <button class="button-plus" type="button">+</button>
+                </label>
+                <button class="hotels-search-button" type="submit">Найти</button>
             </form>
         </section>
 
         <section class="main-map">
-          <h2 class="visually-hidden"></h2>
+          <h2 class="visually-hidden">Карта Седоны</h2>
+          <!--Здесь будет карта-->
         </section>
       </main>
 
