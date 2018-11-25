@@ -58,8 +58,8 @@
 					</ul>
 				</fieldset>
 				<div class="price-for-day">
-					<span>от 0</span>
-					<span>до 3000</span>
+					<label>От<input type="text" name="day-price-min" value="0"></label>
+					<label>До<input type="text" name="day-price-max" value="3000"></label>
 					<input type="range" name="day-price" min="0" max="5000" step="200" value="3000">
 				</div>
 				<button type="submit" class="filter-button">Показать</button>
@@ -70,14 +70,15 @@
 			<h2 class="visually-hidden">Список гостиниц Седоны</h2>
 			<ul class="hotels-list">
 				<li class="hotels-list-item">
-					<div class="hotel-name">
+					<p>
 						<a href="Amara-spa.html">
 							<img src="img/amara.jpg" alt="Amara resort & spa" width="135" height="90">
-							<h3>Amara resort & spa</h3>
 						</a>
-					</div>
+					</p>
 					<div class="hotel-info">
-						
+						<h3>
+							<a href="Amara-spa.html">Amara resort & spa</a>
+						</h3>
 						<p class="hotel-type">
 							Гостиница
 							<a class="about-button" href="#">Подробнее</a>
