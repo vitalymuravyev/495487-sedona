@@ -60,7 +60,15 @@
 				<div class="price-for-day">
 					<label>От<input type="text" name="day-price-min" value="0"></label>
 					<label>До<input type="text" name="day-price-max" value="3000"></label>
-					<input type="range" name="day-price" min="0" max="5000" step="200" value="3000">
+					<div class="filter-range-wrapper">
+    					<div class="filter-range">
+      						<div class="filter-range-scale">
+        						<div class="filter-range-bar"></div>
+      						</div>
+      						<button type="button" class="filter-range-button min"></button>
+      						<button type="button" class="filter-range-button max"></button>
+    					</div>
+  					</div>
 				</div>
 				<button type="submit" class="filter-button">Показать</button>
 			</form>
