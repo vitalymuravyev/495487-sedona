@@ -21,11 +21,15 @@ a {
 	color: #333333;
 }
 
-.footer-copyright img:hover {
+.footer-copyright a {
+	fill: green;
+}
+
+.footer-copyright a:hover {
 	fill: #81b3d2;
 }
 
-.main-footer .footer-copyright img:focus {
+.main-footer .footer-copyright a:focus {
 	fill: #bdbbbc;
 }
 
@@ -117,6 +121,16 @@ a {
 	text-transform: uppercase;
 }
 
+.hotels-search-button:hover {
+	background-color: #669EC0;
+}
+
+.hotels-search-button:focus {
+	color: #ffffff;
+	opacity: 30%;
+	background-color: #5496BD;
+}
+
 .hotels-search-form {
 	background-color: #ffffff;
 	line-height: 26px;
@@ -124,8 +138,20 @@ a {
 
 .hotels-search-form input {
 	font: inherit;
+	color: #000000;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
+}
+
+.hotels-search-form input:hover {
+	background-color: #EBEBEB;
+	color: #000000;
+}
+
+.hotels-search-form input:focus {
+	background-color: #ffffff;
+	color: #000000;
+	border: 2px solid #e5e5e5;
 }
 
 .hotels-search-form-button {
