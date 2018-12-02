@@ -21,11 +21,15 @@ a {
 	color: #333333;
 }
 
-.footer-copyright path:hover {
+.footer-logo svg {
+	fill: #231f20;
+}
+
+.footer-logo:hover svg {
 	fill: #81b3d2;
 }
 
-.footer-copyright path:active {
+.footer-logo:active svg {
 	fill: #bdbbbc;
 }
 
