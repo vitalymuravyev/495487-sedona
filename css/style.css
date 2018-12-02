@@ -21,15 +21,11 @@ a {
 	color: #333333;
 }
 
-.footer-copyright a {
-	fill: green;
-}
-
-.footer-copyright a:hover {
+.footer-copyright path:hover {
 	fill: #81b3d2;
 }
 
-.main-footer .footer-copyright a:focus {
+.footer-copyright path:active {
 	fill: #bdbbbc;
 }
 
@@ -63,7 +59,7 @@ a {
 .hotel-price {
 	font-size: 14px;
 	font-weight: 400;
-	color: 333333;
+	color: #333333;
 	line-height: 21px;
 }
 
@@ -77,9 +73,9 @@ a {
 	color: #ffffff;
 }
 
-.hotel-type .about-button:focus {
+.hotel-type .about-button:active {
 	color: #ffffff;
-	opacity: 30%;
+	opacity: 0.3;
 	background-color: #5496BD;
 }
 
@@ -87,7 +83,7 @@ a {
 	line-height: 21px;
 	font-weight: 400;
 	color: #666666;
-	background-color: f2f2f2;
+	background-color: #f2f2f2;
 }
 
 .hotel-price a {
@@ -98,13 +94,13 @@ a {
 	font-weight: 700;
 }
 
-.hotel-price .reservation-button:focus {
-	background-color: #503E33;
+.hotel-price .reservation-button:active {
+	background-color: #503e33;
 	color: #847870;
 }
 
 .hotel-price .reservation-button:hover {
-	background-color: #604E43;
+	background-color: #604e43;
 	color: #ffffff;
 }
 
@@ -122,13 +118,13 @@ a {
 }
 
 .hotels-search-button:hover {
-	background-color: #669EC0;
+	background-color: #669ec0;
 }
 
-.hotels-search-button:focus {
+.hotels-search-button:active {
 	color: #ffffff;
-	opacity: 30%;
-	background-color: #5496BD;
+	opacity: 0.3;
+	background-color: #5496bd;
 }
 
 .hotels-search-form {
@@ -144,7 +140,7 @@ a {
 }
 
 .hotels-search-form input:hover {
-	background-color: #EBEBEB;
+	background-color: #ebebeb;
 	color: #000000;
 }
 
@@ -213,7 +209,7 @@ a {
 	color: #81b3d2;
 }
 
-.site-menu a:focus,
-.hotel-info a:focus {
-	color: #b2b2b2;
+.site-menu a:active,
+.hotel-info a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
