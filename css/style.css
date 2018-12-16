@@ -17,6 +17,17 @@ a {
 	text-decoration: none;
 }
 
+.accomodation-type legend {
+	margin-left: 87px;
+}
+
+.about-button {
+	display: block;
+	width: 110px;
+	text-align: center;
+	margin-top: 15px;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -26,6 +37,120 @@ a {
 .features p {
 	font-weight: 400;
 	color: #333333;
+}
+
+.filter {
+	display: flex;
+	background-image: url("../img/filter_background.jpg");
+	background-position: 0 -295px;
+}
+
+.filter fieldset {
+	border: none;
+	width: 240px;
+	padding: 0;
+	margin: 0;
+	margin-top: 31px;
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-bottom: 25px;
+
+}
+
+.filter li {
+	margin-bottom: 30px;
+}
+
+.filter li:last-child {
+	margin-bottom: 35px;
+}
+
+.filter ul {
+	list-style: none;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+
+.filter .accomodation-type ul {
+	margin-left: 87px;
+}
+
+.filter-button {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.filter-button:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.filter-button-min,
+.filter-button-max {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	box-sizing: content-box;
+	padding: 0;
+
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+}
+
+.filter-button-min {
+	left: 0;
+}
+
+.filter-button-max {
+	left: 80%;
+}
+
+.filter-range {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.filter-range-bar {
+	width: 80%;
+	height: 2px;
+
+	background-color: #ffffff;
+}
+
+.filter-range-scale {
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-title {
+	margin-top: 31px;
+	margin-bottom: 9px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .footer-copyright {
@@ -52,6 +177,11 @@ a {
 
 .footer-social ul {
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .hashtag {
@@ -71,15 +201,19 @@ a {
 	margin: 0;
 }
 
+.hotel-facilities legend {
+	margin-left: 72px;
+}
+
+.hotel-facilities ul {
+	margin-left: 72px;
+}
+
 .hotels-list li {
 	display: flex;
 	flex-direction: row;
 	border-bottom: 1px solid #e5e5e5;
 	padding: 30px 72px;
-}
-
-.hotels-list li:first-child {
-	border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .hotels-list-item p {
@@ -93,12 +227,14 @@ a {
 .hotels-list-item .hotel-rank {
 	margin: 0;
 	margin-left: auto;
+	width: 110px;
 }
 
 .hotel-info h3 {
 	font-size: 21px;
 	line-height: 26px;
-	margin-top: 0;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .hotel-info a {
@@ -107,6 +243,7 @@ a {
 
 .hotel-type,
 .hotel-price {
+	display: inline-block;
 	font-size: 14px;
 	font-weight: 400;
 	color: #333333;
@@ -130,15 +267,16 @@ a {
 }
 
 .hotels-top {
+	display: block;
 	line-height: 21px;
 	font-weight: 400;
 	color: #666666;
 	background-color: #f2f2f2;
+	padding: 6px 15px;
+	margin-top: 40px;
 }
 
 .hotel-price a {
-	width: 142px;
-	height: 27px;
 	background-color: #766357;
 	color: #ffffff;
 	font-weight: 700;
@@ -154,11 +292,14 @@ a {
 	color: #ffffff;
 }
 
+.hotel-rank
+
 .hotels-search {
 	text-align: center;
 }
 
 .hotels-search-button {
+	position: relative;
 	width: 458px;
 	height: 58px;
 	background-color: #81b3d2;
@@ -183,12 +324,15 @@ a {
 }
 
 .hotels-search-form {
+	position: absolute;
 	width: 568px;
 	height: 395px;
-	margin: 0 auto;
+	left: 50%;
+	margin-left: -284px;
 	background-color: #ffffff;
 	line-height: 26px;
 	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+	/*display: none;*/
 }
 
 .hotels-search-form input {
@@ -218,6 +362,20 @@ a {
 
 .hotels-search-form label {
 	padding-left: 55px;
+}
+
+.hotels-sorting {
+	display: flex;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-sorting h3 {
+	margin-left: 50px;
+	margin-top: 37px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
 }
 
 .qty input {
@@ -255,6 +413,12 @@ a {
 	justify-content: space-between;
 }
 
+.main-map {
+	width: 1200px;
+	height: 473px;
+	background-image: url("../img/map-sedona.jpg");
+}
+
 .main-menu {
 	color: #000000;
 	background-color: #ffffff;
@@ -265,16 +429,17 @@ a {
 .main-menu-logo {
 	position: absolute;
 	left: 50%;
+	margin-left: -69px;
 }
 
 .main-picture {
 	margin: 0;
 	background-image: url("../img/main-photo.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 0 -56px;
 	padding-top: 76px;
-	min-height: 433px
-
+	min-height: 433px;
+	text-align: center;
 }
 
 .presearch-text {
@@ -284,6 +449,123 @@ a {
 
 .presearch-text-question {
 	font-size: 30px;
+}
+
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 2px;
+	height: 22px;
+	background-color: #ffffff;
+}
+
+.price-controls label {
+	display: inline-block;
+
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+
+	cursor: pointer;
+
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+
+	color: inherit;
+	font: inherit;
+
+	background: none;
+	border: none;
+}
+
+.price-for-day {
+	margin: 0;
+	margin-right: 72px;
+	margin-left: auto;
+	width: 330px;
+
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.reservation-button {
+	display: block;
+	width: 145px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.search-result {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 72px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.social-button {
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:active svg {
+	background-color: #5496bd;
+	fill: #bdbbbc;
+}
+
+.social-button svg {
+	fill: #ffffff;
+}
+
+.sort-direction {
+	margin-right: 72px;
+	margin-left: auto;
+}
+
+.sorting-type {
+	display: flex;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.sorting-type li {
+	margin-left: 33px;
+	margin-top: 37px;
+}
+
+.sorting-type li:first-child {
+	margin-left: 40px;
 }
 
 .site-menu {
@@ -316,6 +598,10 @@ a {
 	width: 240px;
 	padding-top: 22px;
 	text-align: center;
+}
+
+.site-menu li:nth-child(3) {
+	margin: 0 0 0 auto;
 }
 
 .visually-hidden {
