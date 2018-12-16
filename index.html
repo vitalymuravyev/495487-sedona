@@ -34,11 +34,11 @@
               <section class="features">
                   <h2 class="visually-hidden">Преимущества Седоны</h2>
                   <p class="five-features">Рассмотрим 5 причин, по которым Седона круче Гранд Каньона!</p>
-                  <ol>
+                  <ol class="features-list">
                       <li>
                           <h3>Настоящий городок</h3>
                           <p>Седона - не аттракцион для туристов, там течет жизнь</p>
-                          <ul>
+                          <!--<ul class="features-secondary-list">
                               <li>
                                   <h4>Жильё</h4>
                                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -51,7 +51,7 @@
                                   <h4>Сувениры</h4>
                                   <p>Не только китайского, но и местного производства</p>
                               </li>
-                          </ul>
+                          </ul>-->
                       </li>
                       <li>
                           <h3>Там есть мост Дьявола</h3>
@@ -72,38 +72,38 @@
                   </ol>
               </section>
 
-              <section class="hotels-search">
-                <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-                <p class="presearch-text-question">Заинтересовались?</p>
-                <p class="presearch-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <button class="hotels-search-form-button" type="button">Поиск гостиницы в Седоне</button>
-                <form class="hotels-search-form" method="post" action="https://echo.htmlacademy.ru">
-                    <label for="checkin-date">Дата заезда:</label>
-                    <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017" value="">
-                    <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
-                    <label for="checkout-date">Дата выезда:</label>
-                    <input type="text" name="checkout-date" id="checkout-date" placeholder="4 июля 2017" value="">
-                    <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
-                    <label for="adults-qty" class="qty">
-                        Взрослые
-                        <button class="button-minus" type="button">-</button>
-                        <input type="text" name="adults-qty" id="adults-qty" placeholder="2" value="">
-                        <button class="button-plus" type="button">+</button>
-                    </label>
-                    <label for="children-qty" class="qty">
-                        Дети
-                        <button class="button-minus" type="button">-</button>
-                        <input type="text" name="children-qty" id="children-qty" placeholder="0" value="">
-                        <button class="button-plus" type="button">+</button>
-                    </label>
-                    <button class="hotels-search-button" type="submit">Найти</button>
-                </form>
-              </section>
+                <section class="hotels-search">
+                    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+                    <p class="presearch-text-question">Заинтересовались?</p>
+                    <p class="presearch-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                    <button class="hotels-search-form-button" type="button">Поиск гостиницы в Седоне</button>
+                    <form class="hotels-search-form" method="post" action="https://echo.htmlacademy.ru">
+                        <label for="checkin-date">Дата заезда:</label>
+                        <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017" value="">
+                        <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
+                        <label for="checkout-date">Дата выезда:</label>
+                        <input type="text" name="checkout-date" id="checkout-date" placeholder="4 июля 2017" value="">
+                        <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
+                        <label for="adults-qty" class="qty">
+                            Взрослые
+                            <button class="button-minus" type="button">-</button>
+                            <input type="text" name="adults-qty" id="adults-qty" placeholder="2" value="">
+                            <button class="button-plus" type="button">+</button>
+                        </label>
+                        <label for="children-qty" class="qty">
+                            Дети
+                            <button class="button-minus" type="button">-</button>
+                            <input type="text" name="children-qty" id="children-qty" placeholder="0" value="">
+                            <button class="button-plus" type="button">+</button>
+                        </label>
+                        <button class="hotels-search-button" type="submit">Найти</button>
+                    </form>
+                </section>
 
-              <section class="main-map">
+            <section class="main-map">
               <h2 class="visually-hidden">Карта Седоны</h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d522141.692281987!2d-111.87395099178698!3d35.017475523130074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1544883648578" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </section>
+            </section>
           </main>
 
       	  <footer class="main-footer">
