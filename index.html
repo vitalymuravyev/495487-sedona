@@ -93,24 +93,28 @@
                     <p class="presearch-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     <button class="hotels-search-form-button" type="button">Поиск гостиницы в Седоне</button>
                     <form class="hotels-search-form" method="post" action="https://echo.htmlacademy.ru">
-                        <label for="checkin-date">Дата заезда:</label>
+                        <label for="checkin-date">Дата заезда:
                         <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017" value="">
                         <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
-                        <label for="checkout-date">Дата выезда:</label>
+                        </label>
+                        <label for="checkout-date">Дата выезда:
                         <input type="text" name="checkout-date" id="checkout-date" placeholder="4 июля 2017" value="">
                         <button class="calendar" type="button"><img src="img/calendar-symbol.svg"></button>
-                        <label for="adults-qty" class="qty">
-                            Взрослые
-                            <button class="button-minus" type="button">-</button>
-                            <input type="text" name="adults-qty" id="adults-qty" placeholder="2" value="">
-                            <button class="button-plus" type="button">+</button>
                         </label>
-                        <label for="children-qty" class="qty">
-                            Дети
-                            <button class="button-minus" type="button">-</button>
-                            <input type="text" name="children-qty" id="children-qty" placeholder="0" value="">
-                            <button class="button-plus" type="button">+</button>
-                        </label>
+                        <div class="people-qty">
+                            <label for="adults-qty" class="qty">
+                                Взрослые:
+                                <button class="button-minus" type="button">-</button>
+                                <input type="text" name="adults-qty" id="adults-qty" placeholder="23" value="">
+                                <button class="button-plus" type="button">+</button>
+                            </label>
+                            <label for="children-qty" class="qty">
+                                Дети:
+                                <button class="button-minus" type="button">-</button>
+                                <input type="text" name="children-qty" id="children-qty" placeholder="0" value="">
+                                <button class="button-plus" type="button">+</button>
+                            </label>
+                        </div>
                         <button class="hotels-search-button" type="submit">Найти</button>
                     </form>
                 </section>
@@ -140,7 +144,7 @@
       	  		</ul>
       	  	  </div>
       	  	  <p class="footer-copyright">
-      	  		<b>Website by</b>
+      	  		Website by
       	  		<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
       	  			<svg width="114px" height="40px" viewBox="0 0 114 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->

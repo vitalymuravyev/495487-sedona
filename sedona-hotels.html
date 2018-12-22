@@ -31,15 +31,15 @@
 						<legend>Инфраструктура:</legend>
 						<ul>
 							<li>
-								<input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+								<input class="visually-hidden" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
 								<label for="swimming-pool">Бассейн</label>
 							</li>
 							<li>
-								<input type="checkbox" name="parking" id="parking">
+								<input class="visually-hidden" type="checkbox" name="parking" id="parking">
 								<label for="parking">Парковка</label>
 							</li>
 							<li>
-								<input type="checkbox" name="wi-fi" id="wi-fi">
+								<input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi" disabled>
 								<label for="wi-fi">Wi-Fi</label>
 							</li>
 						</ul>
@@ -48,15 +48,15 @@
 						<legend>Тип жилья:</legend>
 						<ul>
 							<li>
-								<input type="checkbox" name="hotel" id="hotel" checked>
+								<input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
 								<label for="hotel">Гостиница</label>
 							</li>
 							<li>
-								<input type="checkbox" name="motel" id="motel" checked>
+								<input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
 								<label for="motel">Мотель</label>
 							</li>
 							<li>
-								<input type="checkbox" name="aparts" id="aparts" checked>
+								<input class="visually-hidden" type="checkbox" name="aparts" id="aparts" checked>
 								<label for="aparts">Апартаменты</label>
 							</li>
 						</ul>
@@ -87,11 +87,20 @@
 					<span class="search-result">Найдено: 3</span>
 					<h3>Сортировка:</h3>
 					<ul class="sorting-type">
-						<li>по цене</li>
-						<li>по типу</li>
-						<li>по рейтингу</li>
+						<li><a href="#">по цене</a></li>
+						<li><a href="#">по типу</a></li>
+						<li><a href="#">по рейтингу</a></li>
 					</ul>
-					<div class="sort-direction">Стрелочки</div>
+					<div class="sort-direction">
+						<a class="sort-up" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill-rule="nonzero" d="M5.5 0L0 10h11z"/>
+							</svg>
+						</a>
+						<a class="sort-down sort-current" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill-rule="nonzero" d="M5.5 0L0 10h11z"/>
+							</svg>
+						</a>
+					</div>
 				</div>
 				<ul class="hotels-list">
 					<li class="hotels-list-item">
@@ -113,10 +122,11 @@
 								<a class="reservation-button" href="#">Забронировать</a>
 							</p>
 						</div>
-						<p class="hotel-rank">
-							<b class="hotel-stars four-stars">4 звезды</b>
+						<div class="hotel-rank">
+							<p class="hotel-stars four-stars"></p>
+							<b class="visually-hidden">4 звезды</b>
 							<b class="hotels-top">Рейтинг:8,5</b>
-						</p>
+						</div>
 					</li>
 					<li class="hotels-list-item">
 						<p class="hotels-list-picture">
@@ -137,10 +147,10 @@
 								<a class="reservation-button" href="#">Забронировать</a>
 							</p>
 						</div>
-						<p class="hotel-rank">
-							<b class="hotel-stars three-stars">3 звезды</b>
+						<div class="hotel-rank">
+							<p class="hotel-stars three-stars">3 звезды</p>
 							<b class="hotels-top">Рейтинг:8,9</b>
-						</p>
+						</div>
 					</li>
 					<li class="hotels-list-item">
 						<p class="hotels-list-picture">
@@ -161,10 +171,10 @@
 								<a class="reservation-button" href="#">Забронировать</a>
 							</p>
 						</div>
-						<p class="hotel-rank">
-							<b class="hotel-stars two-stars">2 звезды</b>
+						<div class="hotel-rank">
+							<p class="hotel-stars two-stars">2 звезды</p>
 							<b class="hotels-top">Рейтинг:9,2</b>
-						</p>
+						</div>
 					</li>
 				</ul>
 			</section>
