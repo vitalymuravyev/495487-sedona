@@ -226,6 +226,8 @@ a {
 }
 
 .footer-copyright {
+	font-weight: 400;
+
 	width: 400px;
 	display: flex;
 	justify-content: center;
@@ -234,6 +236,7 @@ a {
 
 .footer-copyright a {
 	display: block;
+	margin-left: 8px;
 }
 
 .footer-logo svg {
@@ -478,7 +481,7 @@ a {
 }
 
 .hotels-search-form input {
-	
+	box-sizing: border-box;
 	font: inherit;
 	color: #000000;
 	text-transform: uppercase;
@@ -487,6 +490,8 @@ a {
 	border: none;
 	padding-bottom: 6px;
 	padding-top: 6px;
+	padding-left: 13px;
+	padding-right: 40px;
 	margin-bottom: 30px;
 	margin-left: 15px;
 }
@@ -616,6 +621,8 @@ a {
 
 .people-qty input {
 	margin-left: 0;
+	padding-left: 5px;
+	padding-right: 5px;
 	text-align: center;
 }
 
