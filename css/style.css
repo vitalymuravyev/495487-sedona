@@ -457,9 +457,6 @@ a {
 
 .hotels-search-form {
 	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	box-sizing: border-box;
 	width: 568px;
 	height: 395px;
@@ -467,7 +464,14 @@ a {
 	background-color: #ffffff;
 	line-height: 26px;
 	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-	/*display: none;*/
+}
+
+.hotels-search-form-error {
+	animation: shake 0.6s;
+}
+
+.hotels-search-form-show {
+	display: none;
 }
 
 .hotels-search-form .calendar {
@@ -509,6 +513,7 @@ a {
 
 .hotels-search-form label {
 	position: relative;
+	display: block;
 }
 
 .hotels-sorting {
@@ -608,6 +613,13 @@ a {
 	text-align: center;
 }
 
+.people-qty {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	justify-content: space-between;
+}
+
 .people-qty button {
 	border: none;
 	background-color: #f2f2f2;
@@ -621,9 +633,15 @@ a {
 
 .people-qty input {
 	margin-left: 0;
+	margin-bottom: 0;
 	padding-left: 5px;
 	padding-right: 5px;
 	text-align: center;
+}
+
+.people-qty label {
+	display: flex;
+	align-items: center;
 }
 
 .presearch-text {
@@ -871,4 +889,24 @@ a {
 	height: 1px; 
 	width: 1px; 
 	overflow: hidden;
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
 }
